@@ -3,6 +3,8 @@
 Promised-based Api Client for node.js and the browser (axios wrapper).
 More info about options you can find in [axios docs](https://axios-http.com/docs/intro).
 
+## [API documentation](https://infotorg.github.io/api-client/)
+
 ## Installation
 
 ```bash
