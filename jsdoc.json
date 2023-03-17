@@ -1,0 +1,41 @@
+{
+  "plugins": ["plugins/markdown"],
+  "recurseDepth": 10,
+  "source": {
+    "include": ["src", "README.md"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs|dist|tests)"
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "template": "node_modules/clean-jsdoc-theme",
+    "destination": "./docs/",
+    "encoding": "utf8",
+    "recurse": true,
+    "theme_opts": {
+      "default_theme": "light",
+      "homepageTitle": "API Documentation – @infotorg/ApiClient",
+      "meta": [
+        {
+          "name": "author",
+          "content": "Volodymyr Chumak"
+        },
+        {
+          "name": "description",
+          "content": "Promised-based Api Client for node.js and the browser."
+        }
+      ]
+    }
+  },
+  "markdown": {
+    "idInHeadings": true
+  }
+}
