@@ -14,11 +14,13 @@ $ npm install @infotorg/api-client
 ## Usage
 
 ```javascript
+import axios from 'axios';
 import { ApiClient } from '@infotorg/api-client';
 // or for node.js
+// const axios = require('axios');
 // const { ApiClient } = require('@infotorg/api-client');
 
-const apiClient = new ApiClient({
+const apiClient = new ApiClient(axios, {
   // Other options you can find in axios docs
   baseURL: 'https://api.example.com',
   headers: {

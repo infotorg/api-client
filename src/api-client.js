@@ -37,7 +37,9 @@ class ApiClient {
    * @param {*} value
    *
    * @example
-   * const apiClient = new ApiClient();
+   * import axios from 'axios';
+   *
+   * const apiClient = new ApiClient(axios);
    *
    * apiClient.defaults.headers.common['X-Test'] = 'test';
    * api.defaults.baseURL = 'https://example.com';
